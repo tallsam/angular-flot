@@ -23,14 +23,14 @@ angular.module('angular-flot', []).directive('flot', function() {
           }
         };
       }
-      plotArea = $(element.children()[0]);
+      plotArea = jQuery(element.children()[0]);
       plotArea.css({
         width: width,
         height: height
       });
       init = function() {
         var plotObj;
-        plotObj = $.plot(plotArea, scope.dataset, scope.options);
+        plotObj = jQuery.plot(plotArea, scope.dataset, scope.options);
         if (scope.callback) {
           scope.callback(plotObj);
         }
