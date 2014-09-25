@@ -7,5 +7,6 @@
     ],
     "description": "An Angular directive to wrap Flotcharts.",
     "license": "MIT",
-    "homepage": "http://github.com/develersrl/angular-flot"
+    "homepage": "http://github.com/develersrl/angular-flot",
+    "ignore": []
 }
