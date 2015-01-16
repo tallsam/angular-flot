@@ -38,6 +38,7 @@ angular.module('angular-flot', []).directive('flot', function() {
       };
       onDatasetChanged = function(dataset) {
         if (plot) {
+          plot = init();
           plot.setData(dataset);
           plot.setupGrid();
           return plot.draw();
